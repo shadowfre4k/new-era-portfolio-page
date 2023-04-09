@@ -4,30 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Era Portfolio Page</title>
-    <link rel="stylesheet" href="/assets/reset.css" />
-    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
 
   <body>
     <header>
-      <p>Hello World!</p>
+      <!-- Navigation bar and links  -->
+      <section>Vincent Jacobs</section>
+      <nav>
+        <a href="#">About Me</a>
+        <a href="#">Project</a>
+        <a href="#">Contact</a>
+      </nav>
     </header>
 
-    <!-- Navigation bar and links  -->
-
     <main>
-      <header>
-        <section>Vincent Jacobs</section>
-        <nav>
-          <a>About Me</a>
-          <a>Project</a>
-          <a>Contact</a>
-        </nav>
-      </header>
-
       <!-- about me section -->
 
-      <section>
+      <section class="about">
         <aside>About Me</aside>
         <article>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -42,18 +37,39 @@
 
       <!-- work projects section -->
 
-      <section>
+      <section class="work">
         <aside>Work Project</aside>
 
-        <!-- Pictures -->
+        <!-- Pictures with links-->
+        <div class="projects">
+          <section class="card">
+            <a href="https://www.google.com/">
+              <img src="./assets/images/Project image 2.png" alt="" />
+              <p>Project 1</p>
+            </a>
+          </section>
 
-        <span>
-          <a href="#"> Project 1 </a>
-          <a href="#"> Project 2 </a>
-          <a href="#"> Project 3 </a>
-          <a href="#"> Project 4 </a>
-          <a href="#"> Project 5 </a>
-        </span>
+          <section class="card">
+            <a href="https://www.google.com/"></a>
+              <img src="./assets/images/Project image 3.png" alt="" />
+              <p>Project 2</p>
+            </a>
+          </section>
+
+          <section class="card">
+            <a href="https://www.google.com/"
+              ><img src="./assets/images/Project image 3.png" alt="" />
+              <p>Project 3</p>
+            </a>
+          </section>
+
+          <section class="card">
+            <a href="https://www.google.com/">
+              <img src="./assets/images/Project image 4.png" />
+              <p>Project 4</p>
+            </a>
+          </section>
+        </div>
       </section>
     </main>
 
@@ -61,12 +77,12 @@
 
     <footer>
       <aside>Contact Me</aside>
-      <ul>
-        <li><a href="#"> Phone</a></li>
-        <li><a href="#">Email</a></li>
-        <li><a href="#">Github</a></li>
-        <li><a href="#"></a>Linkedin</li>
-      </ul>
+      <span>
+        <a href="#"> Phone</a>
+        <a href="#">Email</a>
+        <a href="#">Github</a>
+        <a href="#">Linkedin</a>
+      </span>
     </footer>
   </body>
 </html>

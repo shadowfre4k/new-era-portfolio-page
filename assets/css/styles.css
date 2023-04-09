@@ -1,0 +1,183 @@
+/* Navigation bar styles */
+
+:root {
+  --background-color: #333333;
+  --text-white: white;
+  --margin-section-aside: 0 0% 0 0%; /*aside containers*/
+  --big-section-width: 85%; /* width of section containers next to aside*/
+  --aside-width: 15%;
+}
+
+body {
+  margin: 0;
+  font-family: monospace;
+  width: 100%;
+  height: 100%;
+}
+
+/* gradient frame */
+
+main {
+  height: 100%;
+  background: linear-gradient(var(--background-color), var(--text-white));
+
+  /* Navigation styles */
+}
+header {
+  display: flex;
+  background-color: var(--background-color);
+  font-size: 3vh;
+  width: 100%;
+  height: 10%;
+  padding: 1%;
+}
+
+header section {
+  background-color: var(--background-color);
+  width: 50%;
+  color: var(--text-white);
+  font-size: 100%;
+  padding-left: 2%;
+}
+
+header nav {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  font-size: 80%;
+}
+
+header nav a {
+  background-color: var(--background-color);
+  color: var(--text-white);
+  padding: 0% 2% 0 2%;
+  text-decoration: none;
+}
+
+/* About me section styles */
+
+.about {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  font-size: 75%;
+  padding: var(--padding-section);
+}
+
+.about aside {
+  width: var(--aside-width);
+  background-color: var(--background-color);
+  border-radius: 0 8px 8px 0;
+  font-size: 1.5vh;
+  color: var(--text-white);
+  text-align: end;
+  padding: 2% 2% 0 0;
+  margin: 1px 1px 1px 0;
+}
+
+.about article {
+  width: var(--big-section-width);
+  background-color: var(--background-color);
+  border-radius: 8px 0 0 8px;
+  font-size: 1.5vh;
+  color: var(--text-white);
+  text-align: center;
+  margin-left: 1px;
+  margin: 1px 0px 1px 1px;
+  padding: 2%;
+}
+
+/* Work / Project situation */
+
+.work {
+  display: flex;
+  width: 100%;
+  height: 75%;
+  padding: var(--padding-section);
+}
+
+.work aside {
+  text-align: end;
+  padding: 2% 2% 0 0;
+  width: var(--aside-width);
+  margin: var(--margin-section-aside);
+  background-color: var(--background-color);
+  color: var(--text-white);
+  border-radius: 0 8px 8px 0;
+  margin: 1px 1px 1px 0;
+}
+/* Photo section Stylings */
+.work div {
+  background-color: var(--background-color);
+  margin-left: 1px;
+  margin: 1px 0px 1px 1px;
+  border-radius: 8px 0 0 8px;
+  height: 100%;
+}
+
+.projects {
+  flex: 4;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* card stylings */
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  margin: 0 1% 0 1%;
+  width: 40%;
+  height: 40%;
+}
+
+.card p {
+  background-color: var(--background-color);
+  text-align: end;
+  color: var(--text-white);
+  position: relative;
+}
+.card a {
+  text-decoration: none;
+}
+
+.card img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 80%;
+}
+/* Contact me Styles */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 32px;
+  width: 100%;
+  height: 10%;
+  background-color: var(--text-white);
+  color: var(--background-color);
+}
+
+footer aside {
+  background-color: var(--text-white);
+  width: 25%;
+  margin: 0.5%;
+  text-align: center;
+}
+
+footer span {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  margin: 0.5%;
+  background-color: var(--text-white);
+}
+
+footer span a {
+  background-color: var(--text-white);
+  text-decoration: none;
+  color: var(--background-color);
+}
