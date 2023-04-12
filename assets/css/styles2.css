@@ -102,6 +102,7 @@ footer a {
   min-width: 300px;
   padding: 1%;
   margin: 0.5% 0.5% 3% 0.5%;
+  position: relative;
 }
 
 .card img {
@@ -137,7 +138,10 @@ footer a {
 }
 
 /* big card header */
+
 #bigcard header {
-  position: static;
-  width: 100%;
+  position: absolute;
+  width: 40%;
+  top: 92%;
+  left: -2%;
 }
