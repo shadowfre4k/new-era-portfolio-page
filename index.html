@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Era Portfolio Page</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles2.css" />
   </head>
 
   <body>
     <header>
       <!-- Navigation bar and links  -->
-      <section>Vincent Jacobs</section>
+      <p>Vincent Jacobs</p>
       <nav>
-        <a href="#">About Me</a>
-        <a href="#">Project</a>
-        <a href="#">Contact</a>
+        <a href="#aboutMe">About Me</a>
+        <a href="#project">Project</a>
+        <a href="contact">Contact</a>
       </nav>
     </header>
 
     <main>
       <!-- about me section -->
 
-      <section class="about">
+      <section id="aboutMe">
         <aside>About Me</aside>
         <article>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -31,57 +31,85 @@
           aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
         </article>
       </section>
 
       <!-- work projects section -->
 
-      <section class="work">
+      <section id="project">
         <aside>Work Project</aside>
 
         <!-- Pictures with links-->
-        <div class="projects">
-          <section class="card">
-            <a href="https://www.google.com/">
-              <img src="./assets/images/Project image 2.png" alt="" />
-              <p>Project 1</p>
-            </a>
-          </section>
 
-          <section class="card">
-            <a href="https://www.google.com/"></a>
-              <img src="./assets/images/Project image 3.png" alt="" />
-              <p>Project 2</p>
-            </a>
-          </section>
+        <div>
+          <article>
+            <span class="card" id="bigcard">
+              <header>Project 1</header>
+              <img
+                src="./assets/images/Project image 1.png"
+                alt="tablet held in hands"
+              />
+            </span>
+          </article>
 
-          <section class="card">
-            <a href="https://www.google.com/"
-              ><img src="./assets/images/Project image 3.png" alt="" />
-              <p>Project 3</p>
-            </a>
-          </section>
+          <!-- seperate big card -->
 
-          <section class="card">
-            <a href="https://www.google.com/">
-              <img src="./assets/images/Project image 4.png" />
-              <p>Project 4</p>
-            </a>
-          </section>
+          <article class="projectsBot">
+            <span class="card">
+              <header>Project 2</header>
+              <img
+                src="./assets/images/Project image 1.png"
+                alt="tablet held in hands"
+              />
+            </span>
+
+            <!-- smaller responsive cards -->
+            <span class="card">
+              <header>Project 3</header>
+              <img
+                src="./assets/images/Project image 1.png"
+                alt="black camera"
+              />
+            </span>
+
+            <span class="card">
+              <header>Project 4</header>
+              <img
+                src="./assets/images/Project image 1.png"
+                alt="tablet held in hands"
+              />
+            </span>
+
+            <span class="card">
+              <header>Project 5</header>
+              <img
+                src="./assets/images/Project image 1.png"
+                alt="rolls of toilet paper in a basket"
+              />
+            </span>
+          </article>
         </div>
       </section>
     </main>
 
-    <!-- contact me info -->
-
-    <footer>
+    <footer class="contact">
       <aside>Contact Me</aside>
       <span>
         <a href="#"> Phone</a>
         <a href="#">Email</a>
         <a href="#">Github</a>
-        <a href="#">Linkedin</a>
+        <a href="#">Resume</a>
       </span>
     </footer>
   </body>

@@ -1,183 +1,131 @@
-/* Navigation bar styles */
-
 :root {
+  --text-white: #fff;
   --background-color: #333333;
-  --text-white: white;
-  --margin-section-aside: 0 0% 0 0%; /*aside containers*/
-  --big-section-width: 85%; /* width of section containers next to aside*/
-  --aside-width: 15%;
 }
+
+/*universal border sizing */
+
+* {
+  box-sizing: border-box;
+  color: var(--text-white);
+}
+
+/*Body styles */
 
 body {
-  margin: 0;
   font-family: monospace;
-  width: 100%;
-  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  min-height: 100vh;
+  justify-content: flex-start;
 }
 
-/* gradient frame */
+/* Navigation bar and name */
 
-main {
-  height: 100%;
-  background: linear-gradient(var(--background-color), var(--text-white));
-
-  /* Navigation styles */
-}
 header {
-  display: flex;
   background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  text-align: center;
   font-size: 3vh;
-  width: 100%;
-  height: 10%;
-  padding: 1%;
 }
 
-header section {
-  background-color: var(--background-color);
-  width: 50%;
-  color: var(--text-white);
-  font-size: 100%;
-  padding-left: 2%;
-}
-
-header nav {
-  background-color: var(--background-color);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 50%;
+header a {
+  text-decoration: none;
   font-size: 80%;
 }
 
-header nav a {
-  background-color: var(--background-color);
-  color: var(--text-white);
-  padding: 0% 2% 0 2%;
-  text-decoration: none;
-}
+/* Main body flex style */
 
-/* About me section styles */
-
-.about {
-  width: 100%;
-  height: 25%;
-  display: flex;
-  font-size: 75%;
-  padding: var(--padding-section);
-}
-
-.about aside {
-  width: var(--aside-width);
-  background-color: var(--background-color);
-  border-radius: 0 8px 8px 0;
-  font-size: 1.5vh;
-  color: var(--text-white);
-  text-align: end;
-  padding: 2% 2% 0 0;
-  margin: 1px 1px 1px 0;
-}
-
-.about article {
-  width: var(--big-section-width);
-  background-color: var(--background-color);
-  border-radius: 8px 0 0 8px;
-  font-size: 1.5vh;
-  color: var(--text-white);
-  text-align: center;
-  margin-left: 1px;
-  margin: 1px 0px 1px 1px;
-  padding: 2%;
-}
-
-/* Work / Project situation */
-
-.work {
-  display: flex;
-  width: 100%;
-  height: 75%;
-  padding: var(--padding-section);
-}
-
-.work aside {
-  text-align: end;
-  padding: 2% 2% 0 0;
-  width: var(--aside-width);
-  margin: var(--margin-section-aside);
-  background-color: var(--background-color);
-  color: var(--text-white);
-  border-radius: 0 8px 8px 0;
-  margin: 1px 1px 1px 0;
-}
-/* Photo section Stylings */
-.work div {
-  background-color: var(--background-color);
-  margin-left: 1px;
-  margin: 1px 0px 1px 1px;
-  border-radius: 8px 0 0 8px;
-  height: 100%;
-}
-
-.projects {
-  flex: 4;
-  padding: 20px;
+main {
   display: flex;
   flex-wrap: wrap;
+  background: linear-gradient(#333333, #fff);
 }
 
-/* card stylings */
-.card {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 10px;
-  margin: 0 1% 0 1%;
-  width: 40%;
-  height: 40%;
-}
-
-.card p {
+/* sections sizing for main  */
+section {
   background-color: var(--background-color);
-  text-align: end;
-  color: var(--text-white);
-  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
 }
-.card a {
+
+/* About me / work aside section  */
+
+section aside {
+  font-size: 2vh;
+  width: 20%;
+  padding: 1% 1% 0 0;
+  text-align: right;
+}
+
+/* about me section */
+section article {
+  font-size: 2vh;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  padding: 7% 10% 7% 10%;
+}
+
+
+
+/* Footer styles */
+
+footer {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 2vh;
+}
+
+footer a {
   text-decoration: none;
+}
+
+/* project section styles */
+
+.projects {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+/* other card styles */
+.card {
+  flex: 1;
+  width: 50%;
+  padding: 5% 0 5% 0;
+  margin: 0 1% 0 1%;
+}
+
+.card header {
+  justify-content: center;
 }
 
 .card img {
-  border-radius: 10px 10px 0 0;
   width: 100%;
-  height: 80%;
+  justify-items: center;
 }
-/* Contact me Styles */
-footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 32px;
+
+/* main project style */
+#bigcard {
+  order: -1;
+  min-width: 100%;
+  height: auto;
   width: 100%;
-  height: 10%;
-  background-color: var(--text-white);
-  color: var(--background-color);
-}
-
-footer aside {
-  background-color: var(--text-white);
-  width: 25%;
-  margin: 0.5%;
-  text-align: center;
-}
-
-footer span {
-  display: flex;
-  justify-content: space-between;
-  width: 25%;
-  margin: 0.5%;
-  background-color: var(--text-white);
-}
-
-footer span a {
-  background-color: var(--text-white);
-  text-decoration: none;
-  color: var(--background-color);
+  flex: 0 0 100%;
+  padding: 2% 0 2% 0;
 }
