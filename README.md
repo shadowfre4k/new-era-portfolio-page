@@ -14,5 +14,9 @@ To View the Page click on link below:
 
 https://shadowfre4k.github.io/new-era-portfolio-page/
 
+To view repo click on link below
+
+https://github.com/shadowfre4k/new-era-portfolio-page
+
 ![Screenshot 1](./assets/images/Screenshot%201%20of%202.jpg)
 ![Screenshot 2](./assets/images/Screenshot%202%20of%202.jpg)
