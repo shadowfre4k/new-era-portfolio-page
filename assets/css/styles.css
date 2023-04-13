@@ -1,6 +1,6 @@
 /* variables */
 :root {
-  --background-color: #333333;
+  --background-color: #434242;
   --white: white;
   --accent: aquamarine;
 }
@@ -29,12 +29,12 @@ header {
 }
 
 header p {
-  text-decoration: overline solid var(--white);
+  text-decoration: underline solid var(--white);
 }
 
 aside img {
   position: relative;
-  top: 20%;
+  top: 18%;
   left: 37%;
   width: 200px;
   height: 200px;
