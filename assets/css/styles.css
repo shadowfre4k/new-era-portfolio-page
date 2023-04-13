@@ -1,131 +1,164 @@
+/* variables */
 :root {
-  --text-white: #fff;
   --background-color: #333333;
+  --white: white;
 }
-
-/*universal border sizing */
 
 * {
-  box-sizing: border-box;
-  color: var(--text-white);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  scroll-behavior: smooth;
 }
-
-/*Body styles */
 
 body {
-  font-family: monospace;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  min-height: 100vh;
-  justify-content: flex-start;
+  height: 100%;
 }
 
-/* Navigation bar and name */
+/* Header content name and links */
 
 header {
-  background-color: var(--background-color);
   display: flex;
-  justify-content: space-between;
-  padding: 40px;
-  text-align: center;
-  font-size: 3vh;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 15%;
+  width: 100%;
+  font-size: 3.5rem;
+  background-color: var(--background-color);
+  color: var(--white);
+  padding: 2%;
 }
 
-header a {
+header p {
+  text-decoration: overline solid var(--white);
+}
+nav {
+  justify-content: space-evenly;
+  display: flex;
+  width: 50%;
+  font-size: 2.5rem;
+}
+
+a {
   text-decoration: none;
-  font-size: 80%;
+  color: var(--white);
 }
 
-/* Main body flex style */
+/* about me and project area */
 
 main {
-  display: flex;
+  width: 100%;
   flex-wrap: wrap;
-  background: linear-gradient(#333333, #fff);
+  background: linear-gradient(var(--background-color), var(--white));
 }
 
-/* sections sizing for main  */
+/* about me / project content container sizing */
 section {
-  background-color: var(--background-color);
   display: flex;
   width: 100%;
-  height: auto;
+  height: 70%;
+  color: var(--white);
 }
-
-/* About me / work aside section  */
+/* aside sizing */
 
 section aside {
-  font-size: 2vh;
+  background-color: var(--background-color);
   width: 20%;
-  padding: 1% 1% 0 0;
-  text-align: right;
+  display: flex;
+  justify-content: end;
+  font-size: 2rem;
+  color: var(--white);
+  border-radius: 0 15px 15px 0;
+  margin: 1px 1px 1px 1px;
+  padding: 3% 2% 0 0;
+  text-decoration: overline solid var(--white);
 }
 
-/* about me section */
+/*sizing for about and project content*/
+
 section article {
-  font-size: 2vh;
+  background-color: var(--background-color);
   width: 80%;
+  border-radius: 15px 0 0 15px;
+  margin: 1px 0 1px 1px;
+  font-size: 1.5rem;
+}
+
+section div {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-
-  padding: 7% 10% 7% 10%;
+  justify-content: center;
+  width: 80%;
+  height: 30%;
+  background-color: var(--background-color);
+  border-radius: 15px 0 0 15px;
 }
 
-
-
-/* Footer styles */
+/* Footer */
 
 footer {
-  background-color: var(--background-color);
   display: flex;
-  justify-content: space-around;
   width: 100%;
-  padding: 20px;
-  text-align: center;
-  font-size: 2vh;
-}
-
-footer a {
-  text-decoration: none;
-}
-
-/* project section styles */
-
-.projects {
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
+  height: 15%;
+  /* font-size: 1.5em; */
   justify-content: space-evenly;
-  align-content: space-evenly;
+  align-items: center;
+  background-color: var(--white);
+  color: var(--background-color);
+}
+footer aside {
+  font-size: 3.5rem;
+  text-decoration: underline solid var(--background-color);
+}
+footer a {
+  color: var(--background-color);
 }
 
-/* other card styles */
+/*card style*/
+
 .card {
-  flex: 1;
-  width: 50%;
-  padding: 5% 0 5% 0;
-  margin: 0 1% 0 1%;
-}
-
-.card header {
-  justify-content: center;
+  width: 20%;
+  min-width: 300px;
+  padding: 1%;
+  margin: 0.5% 0.5% 3% 0.5%;
+  position: relative;
+  margin: 2%;
 }
 
 .card img {
   width: 100%;
-  justify-items: center;
+  border: 2px solid var(--white);
+  box-shadow: ;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px aquamarine;
+}
+.card header {
+  border: 1px solid aquamarine;
+  border-radius: 10px;
+  font-size: 2rem;
+  box-shadow: 2px 8px 5px aquamarine;
 }
 
-/* main project style */
-#bigcard {
-  order: -1;
-  min-width: 100%;
-  height: auto;
+/* Seperate smaller cards */
+.projectsBot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* about me id */
+#aboutMe article {
+  padding: 3% 8% 3% 8%;
+}
+
+/* project id */
+#project aside {
+  padding-top: 4%;
+}
+
+/* big card header */
+
+#bigcard header {
+  font-size: 3rem;
+}
+#bigcard img {
   width: 100%;
-  flex: 0 0 100%;
-  padding: 2% 0 2% 0;
 }
