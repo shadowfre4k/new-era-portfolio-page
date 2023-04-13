@@ -2,6 +2,7 @@
 :root {
   --background-color: #333333;
   --white: white;
+  --accent: aquamarine;
 }
 
 * {
@@ -29,6 +30,17 @@ header {
 
 header p {
   text-decoration: overline solid var(--white);
+}
+
+aside img {
+  position: relative;
+  top: 20%;
+  left: 37%;
+  width: 200px;
+  height: 200px;
+  margin: 2%;
+  border-radius: 15%;
+  border: 1px solid var(--accent);
 }
 nav {
   justify-content: space-evenly;
@@ -68,7 +80,7 @@ section aside {
   color: var(--white);
   border-radius: 0 15px 15px 0;
   margin: 1px 1px 1px 1px;
-  padding: 3% 2% 0 0;
+  padding: 3% 2% 3% 0;
   text-decoration: overline solid var(--white);
 }
 
@@ -126,15 +138,14 @@ footer a {
 .card img {
   width: 100%;
   border: 2px solid var(--white);
-  box-shadow: ;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px aquamarine;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 2px 2px 5px var(--accent);
 }
 .card header {
-  border: 1px solid aquamarine;
-  border-radius: 10px;
+  border: 1px solid var(--accent);
+  border-radius: 10px 10px 0 0;
   font-size: 2rem;
-  box-shadow: 2px 8px 5px aquamarine;
+  box-shadow: 2px 8px 5px var(--accent);
 }
 
 /* Seperate smaller cards */
@@ -142,6 +153,8 @@ footer a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 0%;
+  margin-top: 2%;
 }
 
 /* about me id */
